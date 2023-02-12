@@ -1,0 +1,42 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.auth {
+  height: 100vh;
+
+  .intro {
+    margin-bottom: 50px;
+
+    h2 {
+      margin: 0;
+      letter-spacing: 1px;
+      color: $color-primary;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .para {
+      color: $color-secondary;
+      text-align: center;
+      font-weight: 500;
+    }
+  }
+
+  @include flexbox(
+    $direction: column,
+    $justifyContent: center,
+    $alignItems: center
+  );
+
+  .ant-form {
+    width: 30%;
+
+    button {
+      height: auto;
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+  }
+}

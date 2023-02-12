@@ -1,0 +1,22 @@
+@import "../../mixins.scss";
+@import "../../variables.scss";
+
+.admin-footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 9;
+  background-color: #fff;
+  @include flexbox($justifyContent: space-around);
+
+  > div {
+    @include flexbox($direction: column, $alignItems: center);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-tertiary;
+    }
+  }
+}
