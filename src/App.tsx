@@ -1,13 +1,8 @@
 import { RouterProvider } from "react-router";
 import router from "./routes/Routes";
-import AdminProductsProvider from "./store/AdminProductsContext";
 
 const App = () => {
-  return (
-    <AdminProductsProvider>
-      <RouterProvider router={router} />
-    </AdminProductsProvider>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;

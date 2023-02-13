@@ -1,0 +1,54 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.tab {
+  .ant-tabs-tab-btn {
+    padding: 0 20px;
+  }
+}
+
+.user-home {
+  text-align: center;
+
+  > h2 {
+    color: $color-primary;
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  > p {
+    color: $color-secondary;
+    font-weight: 400;
+  }
+
+  img {
+    margin: 10px 0;
+  }
+
+  .search-input {
+    width: 380px;
+    margin: 20px 0;
+  }
+
+  .card {
+    text-align: left;
+    margin: 10px auto;
+    width: 380px;
+    img {
+      width: 100px;
+      float: left;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0 10px;
+    }
+
+    .text {
+      margin: 30px;
+    }
+
+    button {
+      float: right;
+    }
+  }
+}

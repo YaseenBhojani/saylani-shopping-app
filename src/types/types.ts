@@ -24,10 +24,28 @@ export type User = {
   isAdmin?: string;
 } | DocumentData;
 
-export type AdminProductProps = {
+export type CategoryType = DocumentData | {
+  value: string;
+  label: string;
+};
+
+export type Product = DocumentData | {
   itemInfo: string;
   itemName: string;
   product: string;
   unitName: string;
-  unitPrice: string;
+  unitPrice: number;
+  image?: string;
+};
+
+export type CartItemType = {
+  itemName: string;
+  quantity: number;
+};
+
+export type UserCartContextType = {
+  getItem: (itemName: string) => number;
+  increaseItemQuantity: (itemName: string) => void;
+  decreaseItemQuantity: (itemName: string) => void;
+  emptyCart: () => void;
 };

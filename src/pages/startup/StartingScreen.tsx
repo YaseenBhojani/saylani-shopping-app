@@ -8,7 +8,7 @@ const StartingScreen = () => {
   return (
     <div className="starting-screen">
       <div className="intro">
-        <Image src={Logo} alt="Logo" />
+        <Image src={Logo} preview={false} alt="Logo" />
         <Title>SAYLANI WELFARE</Title>
         <Paragraph className="para">ONLINE DISCOUNT STORE</Paragraph>
       </div>

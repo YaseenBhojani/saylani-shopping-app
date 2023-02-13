@@ -4,10 +4,8 @@
 //  *** Components style sheets ***
 @import "./components/StartingScreen.scss";
 @import "./components/Auth.scss";
-@import "./components/admin/AdminHome.scss";
-@import "./components/admin/AddItem.scss";
-@import "./components/admin/AdminHeader.scss";
-@import "./components/admin/AdminFooter.scss";
+@import "./components/Admin.scss";
+@import "./components/User.scss";
 
 * {
   margin: 0;

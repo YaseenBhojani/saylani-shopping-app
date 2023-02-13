@@ -33,8 +33,8 @@ const SigninForm = () => {
       let user: User;
       querySnapshot.forEach((doc) => {
         user = doc.data();
-        if (user.isAdmin) navigate("/admin/home");
-        else navigate("/user/home");
+        if (user.isAdmin) navigate("/admin");
+        else navigate("/user");
       });
     } catch (err: any) {
       messageApi.open({

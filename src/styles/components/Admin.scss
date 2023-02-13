@@ -1,0 +1,147 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.tab {
+  .ant-tabs-tab-btn {
+    padding: 0 20px;
+  }
+}
+
+.admin-add-item {
+  h3 {
+    color: $color-secondary;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  @include flexbox(
+    $direction: column,
+    $justifyContent: center,
+    $alignItems: center
+  );
+
+  .ant-card {
+    width: 50%;
+  }
+
+  .image-upload {
+    margin: 20px 0;
+    height: 100px;
+    background-color: $color-tertiary;
+    @include flexbox($justifyContent: center, $alignItems: center);
+    border-radius: 20px;
+    cursor: pointer;
+
+    svg {
+      width: 50%;
+      height: 50%;
+    }
+  }
+}
+
+.admin-home {
+  h3 {
+    color: $color-secondary;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+  }
+
+  @include flexbox($direction: column, $alignItems: center);
+
+  .ant-card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    width: 50%;
+    margin: 20px 0;
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      float: left;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .price {
+      margin-left: auto;
+      margin-top: 20px;
+      font-size: 16px;
+      float: right;
+    }
+
+    .product-detail {
+      h4 {
+        color: $color-primary;
+        margin: 0;
+        margin-top: 10px;
+        font-size: 18px;
+        letter-spacing: 1px;
+      }
+
+      span {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.admin-account {
+  @include flexbox(
+    $direction: column,
+    $alignItems: center,
+    $gap: 20px,
+    $justifyContent: center
+  );
+
+  .image-update {
+    margin: 20px 0;
+    width: 250px;
+    height: 100px;
+    background-color: $color-tertiary;
+    @include flexbox($justifyContent: center, $alignItems: center);
+    border-radius: 20px;
+    cursor: pointer;
+
+    svg {
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  .update-name-input {
+    width: 250px;
+  }
+
+  h4 {
+    color: $color-secondary;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 250px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 10px 0;
+    font-weight: 500;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+}
+
+.drawer-btn {
+  position: relative;
+  left: 90vw;
+  bottom: -15px;
+  border: none;
+  box-shadow: none;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
